@@ -8,7 +8,7 @@ class Applications(models.Model):
     city_state_zipcode = models.CharField(max_length=254)
     phone_number = models.IntegerField()
     alternative_phone = models.IntegerField(default=0)
-    age_under_18 = models.IntegerField(default=0)
+    age = models.IntegerField(default=0)
     email = models.EmailField(max_length=254)
 
     hours_available = models.JSONField()
