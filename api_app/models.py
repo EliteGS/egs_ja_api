@@ -24,8 +24,8 @@ class Applications(models.Model):
     have_been_employed_with_us = models.BooleanField()
     is_authorized_to_work_in_the_us = models.BooleanField()
     have_been_convicted = models.BooleanField()
-    convicted_explanation = models.TextField(max_length = 1500, default = "")
-    glazier_experience = models.TextField(max_length = 1500, default = "")
+    convicted_explanation = models.TextField(max_length = 1500, default = "", blank = True)
+    glazier_experience = models.TextField(max_length = 1500, default = "", blank = True)
 
     reviewed = models.BooleanField(default = False)
     date_sent = models.DateField(default = date.today)
