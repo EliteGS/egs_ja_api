@@ -12,7 +12,7 @@ class Applications(models.Model):
     birth_date = models.DateField()
     drivers_license_number = models.CharField(max_length = 254)
     phone = models.CharField(max_length = 254)
-    alternative_phone = models.CharField(max_length = 254, default = "")
+    alternative_phone = models.CharField(max_length = 254, default = "", blank = True)
     email_address = models.CharField(max_length = 254)
 
     days_unavailable = models.CharField(max_length = 254)
